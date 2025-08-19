@@ -1,24 +1,97 @@
-# Gallery
+# NgxGallery
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.0-rc.3.
+A simple responsive native gallery component for Angular 18 based on kolkov/ngx-gallery.
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name --project gallery` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project gallery`.
-> Note: Don't forget to add `--project gallery` or else it will be added to the default project in your `angular.json` file. 
+- ✅ Angular 18 Support
+- ✅ Responsive design
+- ✅ Multiple image sizes support
+- ✅ Thumbnail navigation
+- ✅ Full-screen preview
+- ✅ Touch/swipe support
+- ✅ Keyboard navigation
+- ✅ Customizable animations
+- ✅ TypeScript support
 
-## Build
+## Installation
 
-Run `ng build gallery` to build the project. The build artifacts will be stored in the `dist/` directory.
+Install via [npm][npm] package manager:
 
-## Publishing
+```bash
+npm install @murbanczyk-fp/ngx-gallery --save
+```
 
-After building your library with `ng build gallery`, go to the dist folder `cd dist/gallery` and run `npm publish`.
+## Quick Start
 
-## Running unit tests
+1. Import `NgxGalleryModule` in your module:
 
-Run `ng test gallery` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```typescript
+import { NgxGalleryModule } from '@murbanczyk-fp/ngx-gallery';
 
-## Further help
+@NgModule({
+  imports: [NgxGalleryModule]
+})
+export class AppModule {}
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+2. Use the component in your template:
+
+```html
+<ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+```
+
+3. Configure in your component:
+
+```typescript
+import { NgxGalleryOptions, NgxGalleryImage } from '@murbanczyk-fp/ngx-gallery';
+
+export class AppComponent {
+  galleryOptions: NgxGalleryOptions[] = [
+    {
+      width: '600px',
+      height: '400px',
+      thumbnailsColumns: 4,
+      imageAnimation: NgxGalleryAnimation.Slide
+    }
+  ];
+
+  galleryImages: NgxGalleryImage[] = [
+    {
+      small: 'assets/1-small.jpg',
+      medium: 'assets/1-medium.jpg',
+      big: 'assets/1-big.jpg'
+    },
+    // ... more images
+  ];
+}
+```
+
+## Compatibility
+
+- **Angular 18+**: Use version 18.x.x
+- **Angular 17**: Use version 17.x.x
+- **Angular 16**: Use version 16.x.x
+- **Angular 15**: Use version 15.x.x
+
+## Development
+
+### Building the Library
+
+Run `ng build @murbanczyk-fp/ngx-gallery` to build the library. The build artifacts will be stored in the `dist/` directory.
+
+### Running Tests
+
+Run `ng test @murbanczyk-fp/ngx-gallery` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+### Publishing
+
+After building the library, run `npm run publish:lib` to publish to npm.
+
+## Documentation
+
+For detailed documentation and examples, visit the [base repository](https://github.com/kolkov/ngx-gallery) which contains comprehensive usage instructions.
+
+## License
+
+MIT License
