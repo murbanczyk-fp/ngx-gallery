@@ -25,6 +25,7 @@ type Orientation = ('slideLeft' | 'slideRight' | 'fade' | 'rotateLeft' | 'rotate
   templateUrl: './ngx-gallery-image.component.html',
   styleUrls: ['./ngx-gallery-image.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
   animations: [
     trigger('animation', [
       // ...

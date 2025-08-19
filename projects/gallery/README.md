@@ -1,10 +1,10 @@
 # NgxGallery
 
-A simple responsive native gallery component for Angular 18 based on kolkov/ngx-gallery.
+A simple responsive native gallery component for Angular 19 based on kolkov/ngx-gallery.
 
 ## Features
 
-- ✅ Angular 18 Support
+- ✅ Angular 19 Support
 - ✅ Responsive design
 - ✅ Multiple image sizes support
 - ✅ Thumbnail navigation
@@ -69,7 +69,8 @@ export class AppComponent {
 
 ## Compatibility
 
-- **Angular 18+**: Use version 18.x.x
+- **Angular 19+**: Use version 19.x.x
+- **Angular 18**: Use version 18.x.x
 - **Angular 17**: Use version 17.x.x
 - **Angular 16**: Use version 16.x.x
 - **Angular 15**: Use version 15.x.x

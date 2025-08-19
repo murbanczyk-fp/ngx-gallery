@@ -15,10 +15,9 @@ describe('NgxGalleryPrevewComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgxGalleryPreviewComponent, NgxGalleryArrowsComponent, NgxGalleryActionComponent, NgxGalleryBulletsComponent],
-      imports: [],
-      providers: [Renderer2, DomSanitizer, NgxGalleryService, ChangeDetectorRef]
-    })
+    imports: [NgxGalleryPreviewComponent, NgxGalleryArrowsComponent, NgxGalleryActionComponent, NgxGalleryBulletsComponent],
+    providers: [Renderer2, DomSanitizer, NgxGalleryService, ChangeDetectorRef]
+})
     .compileComponents();
   }));
 

@@ -12,10 +12,9 @@ describe('NgxGalleryThumbnailsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgxGalleryThumbnailsComponent, NgxGalleryActionComponent, NgxGalleryArrowsComponent ],
-      imports: [],
-      providers: [Renderer2, NgxGalleryService]
-    })
+    imports: [NgxGalleryThumbnailsComponent, NgxGalleryActionComponent, NgxGalleryArrowsComponent],
+    providers: [Renderer2, NgxGalleryService]
+})
     .compileComponents();
   }));
 

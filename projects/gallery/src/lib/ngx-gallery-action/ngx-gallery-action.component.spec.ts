@@ -8,8 +8,8 @@ describe('NgxGalleryActionComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgxGalleryActionComponent ]
-    })
+    imports: [NgxGalleryActionComponent]
+})
     .compileComponents();
   }));
 

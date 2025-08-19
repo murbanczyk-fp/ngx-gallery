@@ -29,7 +29,8 @@ import {NgxGalleryLayout} from './ngx-gallery-layout';
   styleUrls: ['./ngx-gallery.component.scss'],
   encapsulation: ViewEncapsulation.None,
   providers: [NgxGalleryService],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false
 })
 export class NgxGalleryComponent implements OnInit, DoCheck, AfterViewInit {
   @Input() options: NgxGalleryOptions[] = [{}];

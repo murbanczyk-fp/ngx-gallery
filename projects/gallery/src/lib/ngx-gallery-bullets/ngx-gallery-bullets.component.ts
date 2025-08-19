@@ -4,7 +4,8 @@ import {ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output}
   selector: 'ngx-gallery-bullets',
   templateUrl: './ngx-gallery-bullets.component.html',
   styleUrls: ['./ngx-gallery-bullets.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false
 })
 export class NgxGalleryBulletsComponent {
   @Input() count: number;

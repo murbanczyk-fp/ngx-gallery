@@ -14,14 +14,14 @@ describe('NgxGalleryComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [NgxGalleryComponent,
+    imports: [NgxGalleryComponent,
         NgxGalleryImageComponent,
         NgxGalleryThumbnailsComponent,
         NgxGalleryPreviewComponent,
         NgxGalleryActionComponent,
         NgxGalleryBulletsComponent,
         NgxGalleryArrowsComponent]
-    })
+})
       .compileComponents();
   }));
 

@@ -8,8 +8,8 @@ describe('NgxGalleryBulletsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgxGalleryBulletsComponent ]
-    })
+    imports: [NgxGalleryBulletsComponent]
+})
     .compileComponents();
   }));
 

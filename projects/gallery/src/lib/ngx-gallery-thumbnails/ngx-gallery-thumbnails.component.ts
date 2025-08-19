@@ -19,7 +19,8 @@ import {NgxGalleryOrder} from '../ngx-gallery-order';
   selector: 'ngx-gallery-thumbnails',
   templateUrl: './ngx-gallery-thumbnails.component.html',
   styleUrls: ['./ngx-gallery-thumbnails.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false
 })
 export class NgxGalleryThumbnailsComponent implements OnChanges {
   thumbnailsLeft: string;
